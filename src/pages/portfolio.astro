@@ -1,0 +1,101 @@
+---
+import Layout from "../layouts/Layout.astro"
+import img1 from "../images/image1.png"
+import img2 from "../images/image2.png"
+import img3 from "../images/image3.png"
+import img4 from "../images/image4.png"
+import img5 from "../images/image5.webp"
+import img6 from "../images/image6.webp"
+import img7 from "../images/image7.png"
+import img8 from "../images/image8.jpg"
+import img9 from "../images/image9.png"
+import img10 from "../images/image10.png"
+
+---
+
+<Layout>
+    <div class="flex justify-start p-[8vw] bg-[#0005] bg-blend-darken items-end bg-[url('/src/images/portfolio-bg.webp')] h-[56vh] bg-cover bg-no-repeat md:bg-right sm:pb-16 bg-[top_right_-10rem] md:bg-right">
+		<div class="text-center sm:text-start">
+			<h1 class="text-3xl sm:text-5xl	font-semibold text-white leading-10 md:leading-[4rem]">
+                Client's Successful Digital <br class="hidden md:block">Transformation Stories</h1>
+			<p class="text-white text-xl sm:text-2xl font-thin mt-4 mb-8 sm:mb-4 md:mb-0">Your ideas are transformed into Future-ready solutions !</p>
+		</div> 
+	</div>
+	<div >
+        <div class="text-center bg-[#f2f2f2] pt-4">
+            <h2 class="text-2xl py-6 md:text-3xl font-bold text-[#222]">FEATURED STORIES</h2>
+            <div class="max-w-[1200px] mx-auto gap-12 px-4 sm:px-8 grid md:grid-cols-2 py-6 md:py-16">
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#fff] rounded-lg">
+					<h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Logistics Industry</h4>
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">Robotic Process Automation to define business rules</h6>
+					<p class="md:text-lg text-[#222]">By working collaboratively and utilizing each other’s technologies, Germany’s one of the leading international logistics companies adapts Emirates Infotech’s Robotic process automation tool to streamline management and resolve mundane processes.</p>
+					<img class="" src={img1} alt="">
+				</div>
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#fff] rounded-lg">
+					<h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Chemical R&D</h4>
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">An enterprise application with AI & ML solutions to innovate chemical lab operations</h6>
+					<p class="md:text-lg text-[#222]">Emirates Infotech  collaborated with one of the biggest chemical and consumer goods company in building an engineering innovation platform that leverages its support to the chemical industry and transforms how laboratories operate and innovate.</p>
+					<img class="" src={img2} alt="">
+				</div>
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#fff] rounded-lg">
+					<h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Construction Industry</h4>
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">A mobile application to digitize construction industries workflow & approval process</h6>
+					<p class="md:text-lg text-[#222]">Emirates Infotech teamed up with One of the world’s top 5 construction companies to make project management process efficient by developing a mobility solution that help decision makers save time, improve efficiency and reduce cost.</p>
+					<img class="" src={img3} alt="">
+				</div>
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#fff] rounded-lg">
+					<h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Fortune 500 Company</h4>
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">Custom enterprise application to digitize process, workflow & manage operations</h6>
+					<p class="md:text-lg text-[#222]">Emirates Infotech and a Fortune 500 company worked together to build a single platform solution with process automation that helps in improves their operational efficiency and smoothen customer experience.</p>
+					<img class="" src={img4} alt="">
+				</div>
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#fff] rounded-lg">
+					<h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Automation Project</h4>
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">Manufacturing plant efficiency monitoring system & report automation</h6>
+					<p class="md:text-lg text-[#222]">Emirates Infotech partners with a leading manufacturing company to help them scale their plants performances through fact based decisions generated through the plant efficiency monitoring system</p>
+					<img class="" src={img5} alt="">
+				</div>
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#fff] rounded-lg">
+					<h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Mobile App</h4>
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">Integrated enterprise mobile application with Oracle E-business suite</h6>
+					<p class="md:text-lg text-[#222]">Emirates Infotech helps a Qatari-based conglomerate to digitally transform and strengthen their internal management process through mobility based HR Management software that envisions building a happier workforce</p>
+					<img class="" src={img6} alt="">
+				</div>
+
+            </div>
+        </div>
+    </div>
+
+	<div >
+        <div class="text-center bg-[#fff] pt-4 pb-4">
+            <h2 class="text-2xl py-6 md:text-3xl font-bold text-[#222]">RECENT STORIES</h2>
+            <div class="max-w-[1200px] mx-auto gap-12 px-4 sm:px-8 grid md:grid-cols-2 py-6 md:py-16">
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#f2f2f2] rounded-lg">
+					<!-- <h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Logistics Industry</h4> -->
+					<img class="" src={img7} alt="">
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">Facial Emotion Recognition</h6>
+					<p class="md:text-lg text-[#222]">With an AI powered- facial recognition platform, Emirates Infotech helped a retail company re-energise the customer journey, increasing the store’s closure rate to 59%.</p>
+				</div>
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#f2f2f2] rounded-lg">
+					<!-- <h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Logistics Industry</h4> -->
+					<img class="" src={img8} alt="">
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">Pedestrian Avoidance System</h6>
+					<p class="md:text-lg text-[#222]">Emirates Infotech developed a Deep learning based predictive avoidance system for an Australia based company to ensure workplace safety by detecting risky forklift behavior.</p>
+				</div>
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#f2f2f2] rounded-lg">
+					<!-- <h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Logistics Industry</h4> -->
+					<img class="" src={img9} alt="">
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">AI/ML based Pet Health Monitoring system</h6>
+					<p class="md:text-lg text-[#222]">Emirates Infotech delivers a personalized AI-powered model for animal health anomalies detection through statistical models and predictive analysis to ensure the well-being of cats.</p>
+				</div>
+				<div class="space-y-5 px-4 sm:px-6 py-8 bg-[#f2f2f2] rounded-lg">
+					<!-- <h4 class="text-xl md:text-2xl font-bold text-[#2d85a4] tracking-wide">Logistics Industry</h4> -->
+					<img class="" src={img10} alt="">
+					<h6 class="text-xl md:text-2xl font-semibold tracking-wide">Mobility Solution for Logistics Enterprise</h6>
+					<p class="md:text-lg text-[#222]">Emirates Infotech experts worked with the World’s largest independently owned courier company in developing a mobility solution that helps both delivery agents and consumers get a smooth delivery experience.</p>
+				</div>
+
+            </div>
+        </div>
+    </div>
+</Layout>

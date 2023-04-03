@@ -1,0 +1,46 @@
+---
+import Logo from '../images/logo.png'
+---
+
+<div class="bg-[#000] px-8 py-12">
+    <div class="flex flex-col md:flex-row max-w-[1100px] mx-auto">
+        <div class=" flex flex-col items-center md:items-start flex-1">
+            <div class="ml-4">
+                <img src={Logo} class="h-12 mr-3 mx-8" alt="Emirates Logo" />
+                <span class="self-center text-[1.2rem] font-bold whitespace-nowrap text-[#daaa57]">Emirates Infotech</span>
+            </div>
+            <p class="text-[#f2f2f2] italic pl-1"><i class="fa-solid fa-envelope mr-1 mb-5 md:mb-0"></i>info@emiratesinfotech.com</p>
+            <div class="h-[2px] w-full bg-[#aaaa] mt-4 md:hidden"></div>
+        </div>
+        <div class="my-5 px-1">
+            <ul class="tracking-wide text-white md:flex md:space-x-6">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/portfolio">PORTFOLIO</a></li>
+
+                <li><a href="/services">SERVICES</a></li>
+                <li><a href="/industries">TECHNOLOGIES</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="h-[2px] w-full bg-[#aaaa] md:mt-12 max-w-[1100px] mx-auto mb-8"></div>
+    <div class=" py-2 text-[#ccca] max-w-[1100px] mx-auto">
+
+        <div class="text-center text-white"><small>Copyright ©2023 Emirates Infotech. All Rights Reserved</small></div>
+    </div>
+    <!-- <div class=" text-[#fff] flex justify-center items-center"><span class="soft pointer">Software by&nbsp;</span><a href="https://www.kerasoft.in/web" target="_blank" class="kera font-bold text-[#e0c33a]">ker^s&lt;&gt;ft <i class="fa-solid fa-link"></i></a></div> -->
+</div>
+
+<style>
+    li {
+        margin-bottom: 8px;
+        font-size: .925rem;
+    }
+
+    @media screen and (min-width: 720px) {
+        li:hover {
+            border-bottom: 2px solid #e0c33a;
+        }
+    }
+</style>

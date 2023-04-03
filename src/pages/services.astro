@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Card from "../components/Card.astro";
+
+---
+
+<Layout title="Services | EI">
+    <div class="flex justify-start p-[8vw] bg-[#0005] bg-blend-darken items-end bg-[url('/src/images/services-bg.webp')] h-[60vh] md:h-[70vh] bg-cover bg-no-repeat bg-[top_right_-10rem] md:bg-right">
+		<div class=" text-center sm:text-start">
+			<h1 class="text-3xl md:text-5xl font-semibold text-white leading-10 md:leading-[4rem]">Transform your business<br class="hidden sm:block"> with our Digital Services</h1>
+			<p class="text-white text-xl md:text-2xl font-thin mt-4 mb-4 md:mb-0">Transform your organization into a future-ready <br class="hidden sm:block md:hidden"> digital business by <br class="hidden md:block">
+				partnering with us, a trusted <br class="hidden sm:block md:hidden"> Digital Engineering company</p>
+		</div> 
+	</div>
+
+	<div class={`bg-[#fff] flex flex-col items-center justify-center py-12 lg:py-16`}>
+		<div class="text-center px-8 md:px-[10vw] lg:px-[18vw]">
+			<h3 class="text-3xl font-bold tracking-wider mb-4">Our Service Offerings</h3>
+			<p class="text-lg lg:text-xl font-semibold italic text-[#444] mb-2">Digital Engineering, AI & ML, Quality Engineering Services and Enterprise Services.</p>
+			<p class="sm:text-lg font-thin text-[#2a2a2a]">With our expertise in Product Engineering, AI & ML, Quality Engineering, and Enterprise services, our team can guide you through the digital landscape and provide you with innovative solutions that are tailored to your specific needs.</p>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 w-full p-[5vw]">
+			<div class={`bg-[url('/src/images/native-web-application-image.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">Native Web Application</p>
+			</div>
+			<div class={`bg-[url('/src/images/Mobility-image.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">Mobile Application Development</p>
+			</div>
+			<div class={`bg-[url('/src/images/ai.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">Artificial Intelligence & Machine Learning</p>
+			</div>
+			<div class={`bg-[url('/src/images/enterprise-services.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">Enterprise Solutions</p>
+			</div>
+			<div class={`bg-[url('/src/images/techmodernization-banner.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">Tech Mordenization</p>
+			</div>
+			<div class={`bg-[url('/src/images/cloud-enablement-banner.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">Cloud Engineering</p>
+			</div>
+			<div class={`bg-[url('/src/images/microservice-devops-banner.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">DevOps Automation</p>
+			</div>
+			<div class={`bg-[url('/src/images/quality-engineers-image.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">Quality Engineering Serivces</p>
+			</div>
+			<div class={`bg-[url('/src/images/UX-image.png')] bg-no-repeat bg-cover rounded-xl text-white h-72 flex justify-end items-end`}>
+				<p class="text-2xl font-semibold w-56 mr-4 mb-4">User Experience Engineering</p>
+			</div>
+		</div>
+	</div>
+</Layout>

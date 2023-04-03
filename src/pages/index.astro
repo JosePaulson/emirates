@@ -1,81 +1,169 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro"
+import Card from "../components/Card.astro";
+import Img1 from "../images/OurProcess.webp"
+import Img2 from "../images/img-story.webp"
+import Ico1 from "../images/data-protections.png"
+import Ico2 from "../images/Flexible.png"
+import Ico3 from "../images/tools.png"
+import Ico4 from "../images/agile.png"
+import Ico5 from "../images/design.png"
+import Ico6 from "../images/solution.png"
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title="Home | EI">
+	<div class="flex justify-start p-[8vw] bg-[#0005] bg-blend-darken items-end bg-[url('/src/images/herobg.webp')] h-[70vh] bg-cover bg-no-repeat bg-[top_right_-30rem] md:bg-right">
+		<div class="">
+			<h1 class="text-4xl md:text-6xl font-semibold text-white leading-10 md:leading-[5rem]">Innovative Solutions <br class="hidden md:block"><span class="font-thin">for a</span> Better Tomorrow</h1>
+			<p class="text-white text-xl md:text-2xl font-thin mt-4 mb-8 sm:mb-4 md:mb-0">Transform your organization into a future-ready <br class="hidden sm:block md:hidden"> digital business by <br class="hidden md:block">
+				partnering with us, a trusted <br class="hidden sm:block md:hidden"> Digital Engineering company</p>
+		</div> 
+	</div>
+	<Card 
+		heading = "Our Services"
+		subHeading = "Accelerate your transformation journey with our comprehensive service offerings!"
+		imgUrl = {{
+			one:"bg-[url('/src/images/digital-engineering.webp')] bg-center",
+			two:"bg-[url('/src/images/ai-ml.jpg')] bg-center",
+			three:"bg-[url('/src/images/quality-engineering.jpg')] bg-center",
+			four:"bg-[url('/src/images/ms-services.jpg')] bg-center",
+		}}
+		text = {{
+			one:"Digital Engineering",
+			two:"AI & ML",
+			three:"Quality Engineering Serivces",
+			four:"Enterprise Services",
+		}}
+		darken = 'bg-blend-darken'
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+	/>
+	<Card 
+		bg = 'bg-[#f2f2f2]'
+		heading = "Success Stories"
+		subHeading = "Our Clients ideas are transformed into Future-ready solutions!"
+		imgUrl = {{
+			one:"bg-[url('/src/images/Small-FanaticTV.webp')] bg-center",
+			two:"bg-[url('/src/images/Small-AI-Powered-Clinical-Pathology.webp')] bg-center",
+			three:"bg-[url('/src/images/Small-Floral.webp')] bg-center",
+			four:"bg-[url('/src/images/Small-Workflow-and-Process-Digitization.webp')] bg-center",
+		}}
+		text = {{
+			one:"Live Streaming App for Entertainment Industry",
+			two:"A Pathology AI Solution to Analyse Digital Slides",
+			three:"Cloud Migration to Transform Marketplace business",
+			four:"Digitalization of Enterprize Workflow & Process",
+		}}
+
+	/>
+
+	<!-- <div class= "flex flex-col items-center justify-center py-12 lg:py-16 max-w-[1200px] mx-auto">
+		<div class="text-center px-8 mb-8 md:mb-12">
+			<h3 class="text-3xl font-bold tracking-wider mb-4">Our Clients</h3>
+			<p class="text-lg font-semibold italic text-[#222]">Trusted by Global Brands!</p>
+		</div>
+		<div class="grid md:grid-cols-3">
+			<div></div>
+		</div>
+	</div> -->
+	
+	<div class= "flex flex-col items-center justify-center py-12 lg:py-16 max-w-[1200px] mx-auto">
+		<div class="text-center px-8 mb-8 md:mb-12">
+			<h3 class="text-3xl font-bold tracking-wider mb-4">Our Process</h3>
+			<p class="text-lg font-semibold italic text-[#222]">We gratefully collaborate with our clients as partners in building a successful relationship!</p>
+		</div>
+		<div class="flex flex-col md:flex-row justify-center items-center gap-10">
+			<img src={Img1} alt="">
+			<div class="grid md:grid-cols-2 gap-3 md:gap-12 px-6">
+				<div class="flex flex-col gap-4">
+					<div class="flex gap-2">
+						<img class="h-8 w-8" src={Ico1} alt="">
+						<div>
+							<h6 class="text-xl font-semibold">Data & IP Protection</h6>
+							<p class="font-thin">A NDA driven process to keep your data and IP safe and secure</p>
+						</div>
+					</div>
+					<div class="flex gap-2">
+						<img class="h-8 w-8" src={Ico2} alt="">
+						<div>
+							<h6 class="text-xl font-semibold">Flexible Engagement</h6>
+							<p class="font-thin">Flexible engagement model to match your dynamic business needs</p>
+						</div>
+					</div>
+					<div class="flex gap-2">
+						<img class="h-8 w-8" src={Ico3} alt="">
+						<div>
+							<h6 class="text-xl font-semibold">Tool Driven</h6>
+							<p class="font-thin">Tool driven development for transparency and collaboration</p>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col gap-4">
+					<div class="flex gap-2">
+						<img class="h-8 w-8" src={Ico4} alt="">
+						<div>
+							<h6 class="text-xl font-semibold">Agile Methodology</h6>
+							<p class="font-thin">Agile development with empowered team ensuring project success</p>
+						</div>
+					</div>
+					<div class="flex gap-2">
+						<img class="h-8 w-8" src={Ico5} alt="">
+						<div>
+							<h6 class="text-xl font-semibold">Design Thinking</h6>
+							<p class="font-thin">Empathize with customer centered needs & solve via visualizations</p>
+						</div>
+					</div>
+					<div class="flex gap-2">
+						<img class="h-8 w-8" src={Ico6} alt="">
+						<div>
+							<h6 class="text-xl font-semibold">Solution Engineering</h6>
+							<p class="font-thin">Built on a consultative engagement that aids in transformation</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg-[#f2f2f2]">
+		<div class= "flex flex-col items-center justify-center py-12 lg:py-16 max-w-[1200px] mx-auto">
+			<div class="text-center px-8 mb-8 md:mb-12">
+				<h3 class="text-3xl font-bold tracking-wider mb-4">Our Story</h3>
+				<p class="text-lg font-semibold italic text-[#222]">14+ years of journey built on Trust & Partnership!</p>
+			</div>
+			<div class="flex flex-col md:flex-row justify-center items-center gap-16">
+				<img class="w-5/6 md:w-1/2" src={Img2} alt="">
+				<div class="grid md:grid-cols-2 gap-3 md:gap-12 px-6">
+					<div class="flex flex-col gap-4">
+						<div>
+							<h6 class="text-3xl font-semibold">5</h6>
+							<p class="font-thin">Global Incorporated Offices</p>
+						</div>
+						<div>
+							<h6 class="text-3xl font-semibold">60%</h6>
+							<p class="font-thin">Clients are working with us for 4+ years</p>
+						</div>
+						<div>
+							<h6 class="text-3xl font-semibold">400+</h6>
+							<p class="font-thin">Agile smart employees</p>
+						</div>
+					</div>
+					<div class="flex flex-col gap-4">
+						<div>
+							<h6 class="font-semibold text-3xl">125+</h6>
+							<p class="font-thin">Successful client partners</p>
+						</div>
+						<div>
+							<h6 class="font-semibold text-3xl">300+</h6>
+							<p class="font-thin">Digital solution implementations</p>
+						</div>
+						<div>
+							<h6 class="font-semibold text-3xl">5star</h6>
+							<p class="font-thin">Rated client feedback</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</Layout>
